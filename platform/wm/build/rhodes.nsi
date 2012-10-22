@@ -9,7 +9,7 @@
  
   Name %APPNAME%
   OutFile "%OUTPUTFILE%"
-  InstallDir %APPINSTALLDIR%
+  InstallDir "%APPINSTALLDIR%"
   BrandingText " "
 
 ;======================================================
@@ -126,7 +126,7 @@ Section %SECTION_NAME% appSection
   %LICENSE_FILE%
   %README_FILE%
   File /r "rho"
-  File %APP_EXECUTABLE%
+  File "%APP_EXECUTABLE%"
   File *.dll
   File *.manifest
   File /r "imageformats"
